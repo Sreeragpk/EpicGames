@@ -1,10 +1,15 @@
 import React from 'react';
 import fortnite from '../assets/fortnite-pictures-b5kfcchwazwiz3cs1.png'
+import { IoMdClose } from "react-icons/io";
+import './Hero.css'
 const Hero = () => {
   return (
     <div className='text-white'>
+        <div className='w-[fit-content] ml-auto mr-[40px] mt-[40px] close-btn cursor-pointer'>
+        <IoMdClose size={47} />
+        </div>
       <div className=' mt-[20px] w-full h-screen text-center flex flex-col  '>
-        <p className='max-w-[1375px] text-[#FFFF] mt-[147px] mx-auto p-2 text-3xl font-extralight'>
+        <p className='max-w-[1375px] text-[#FFFF]  mx-auto p-2 text-3xl font-extralight'>
         Epic Games : An American video game and software developer and publisher based in Cary, North Carolina.
         </p>
         <img className='mx-auto w-[1415px] h-[500px] items-center' src={fortnite} alt="" />
